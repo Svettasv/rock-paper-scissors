@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset/reset.css">
+    <link rel="stylesheet" href="css/styles.css">
+
+
+    <title>Document</title>
+</head>
+
+<body>
+
+    <main class="container">
+
+        <h1 class="title">Rock Paper Scissors</h1>
+        <div class="button-container">
+            <button class="rock button" onclick="rockClick()"><img src="img/fist.svg" alt=""></button>
+            <button class="paper button" onclick="paperClick()"><img src="img/paper.svg" alt=""></button>
+            <button class="paper button" onclick="scissorsClick()"><img src="img/scissors.svg" alt=""></button>
+        </div>
+        <div class="result-container">
+            <p class="result">Let's start!</p>
+            <p id="audio" style="display:none;">
+                <audio id="audioPlayer" src="audio/audio_start.wav" controls></audio>
+            </p>
+        </div>
+        <div class="result-images-container">
+            <div class="user-container">
+                <p class="user-text">You</p>
+                <div class="image-container"><img src="" alt="" class="user-image"></div>
+            </div>
+            <div class="computer-container">
+                <div class="image-container"><img src="" alt="" class="computer-image"></div>
+                <p class="computer-text">Computer</p>
+
+            </div>
+
+        </div>
+
+        <div class="scores-container">
+            <div class="wins-container">
+                <p class="wins-text">Wins: </p>
+                <p class="wins"></p>
+            </div>
+            <div class="losses-container">
+                <p class="losses-text">Losses: </p>
+                <p class="losses"></p>
+            </div>
+            <div class="tie-container">
+                <p class="tie-text">Ties: </p>
+                <p class="tie"></p>
+            </div>
+
+
+
+
+        </div>
+
+
+
+
+
+
+        <br>
+        <button class="reset" onclick="clearAll(); playaudio();">Reset score</button>
+
+
+    </main>
+
+
+
+
+    <script src="index.js"></script>
+</body>
+
+</html>
